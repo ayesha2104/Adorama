@@ -1,5 +1,5 @@
 .navLogo{
-    height: 40px;
+    height: 70px;
     padding: 10px 13.2px;
     background: linear-gradient(to top, rgb(9, 84, 158), rgb(2, 57, 112));
     display: flex;
@@ -15,6 +15,11 @@
     padding: 1px 2px;
     
 
+}
+.leftSide{
+  color: white;
+  font-size: 50px;
+  margin-left: 5px;
 }
 .searchBox{
    padding: 10px;

@@ -21,11 +21,11 @@ const SignUp = () => {
   };
 
   return (
-    <div className={styles.signupContainer}>
-      <div className={styles.signupBox}>
+    <div className="signupContainer">
+      <div className="signupBox">
         <h2>Create an Account</h2>
         <form onSubmit={handleSubmit}>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>First Name:</label>
             <input
               type="text"
@@ -34,7 +34,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>Last Name:</label>
             <input
               type="text"
@@ -43,7 +43,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>Your Email:</label>
             <input
               type="email"
@@ -52,7 +52,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>Password:</label>
             <input
               type="password"
@@ -61,7 +61,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>Confirm Password:</label>
             <input
               type="password"
@@ -70,23 +70,23 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>
               <input type="checkbox" /> Yes, I would like to receive expert tips, special offers, and product news.
             </label>
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>
               <input type="checkbox" /> Yes, sign me up for Adorama Rewards.
             </label>
           </div>
-          <div className={styles.inputGroup}>
+          <div className="inputGroup">
             <label>
               <input type="checkbox" /> Remember Me
             </label>
           </div>
-          <button type="submit" className={styles.btnPrimary}>CREATE ACCOUNT</button>
-          {error && <p className={styles.error}>{error}</p>}
+          <button type="submit" className="btnPrimary">CREATE ACCOUNT</button>
+          {error && <p className="error">{error}</p>}
         </form>
         <p>Have an Account? <Link to="/login">Sign In</Link></p>
       </div>
