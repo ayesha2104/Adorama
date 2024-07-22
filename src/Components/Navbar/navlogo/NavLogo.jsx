@@ -30,7 +30,7 @@ const NavLogo = () => {
         <SearchIcon style={{ fontSize: 14 }} className="flip-vertical"/>
         </button>
       </div>
-     <Link to="Adorama\src\Components\Login.jsx">
+     <Link to="./Login">
         <div className="SignIn">
           <PersonOutlineOutlinedIcon sx={{ color: "white" }} style={{ fontSize: 38 }}/>
          <div className="Account">
