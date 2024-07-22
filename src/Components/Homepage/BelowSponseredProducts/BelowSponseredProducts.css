@@ -1,0 +1,174 @@
+.belowspons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, 1fr);  /* 3 rows */
+    gap: 15px; /* Adjust the gap between images if needed */
+    width: calc(100vw - 40px); /* Full viewport width minus padding */
+    height: calc(100vh - 40px); /* Full viewport height minus padding */
+    padding: 20px; /* Add padding around the grid */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    margin-bottom: 40px; /* Remove any default margin */
+  }
+  
+  .image-container {
+    position: relative; /* Required for absolute positioning of text and gradient */
+    width: 100%;
+    height: 100%; /* Ensure the container height adjusts to fill the grid cell */
+    display: flex; /* Use flex to center the image */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  .image-container::before {
+    content: ''; /* Required for the pseudo-element */
+    position: absolute; /* Position relative to .image-container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent); /* Black gradient from left */
+    z-index: 5; /* Ensure the gradient is above the image but below the text */
+  }
+  
+  .text-overlay {
+    position: absolute; /* Position text on top of the image */
+    bottom: 10px; /* Adjust position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+    color: white; /* Text color */
+    font-size: 16px; 
+    padding: 5px; /* Add padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    z-index: 10; /* Ensure text is on top of the gradient */
+  }
+  .text-overlay p{
+    position: relative;
+    
+  }
+  #preown{
+    position: absolute; /* Position text on top of the image */
+    bottom: 160px; /* Adjust position from the bottom */
+    left: 20%;
+    font-size: 26px;
+    font-weight: light;
+
+  }
+  #preown p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: absolute; /* Position text on top of the image */
+    top:50px;
+    font-weight: light;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  #sell{
+    position: absolute; /* Position text on top of the image */
+    bottom: 160px; /* Adjust position from the bottom */
+    left: 20%;
+    font-size: 26px;
+    font-weight: light;
+  }
+  #sell p{
+    font-size: 16px;
+    position: absolute; /* Position text on top of the image */
+    top:40px;
+    font-weight: light;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+  }
+  #classroom{
+    position: absolute; /* Position text on top of the image */
+    bottom: 210px; /* Adjust position from the bottom */
+    left: 13%;
+    font-size: 26px;
+    font-weight: light;
+
+  }
+  #classroom p{
+    font-size: 16px;
+    position: absolute; /* Position text on top of the image */
+    top:90px;
+    font-weight: light;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+    
+  }
+  #rentals{
+    position: absolute; /* Position text on top of the image */
+    bottom: 210px; /* Adjust position from the bottom */
+    left: 23%;
+    font-size: 26px;
+    font-weight: light;
+
+  }
+  #rentals p{
+    font-size: 16px;
+    position: absolute; /* Position text on top of the image */
+    top:40px;
+    font-weight: light;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+    
+  }
+  #buisness{
+    position: absolute; /* Position text on top of the image */
+    bottom: 210px; /* Adjust position from the bottom */
+    left: 13%;
+    font-size: 26px;
+    font-weight: light;
+
+  }
+  #buisness p{
+    font-size: 16px;
+    position: absolute; /* Position text on top of the image */
+    top:79px;
+    font-weight: light;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+    
+  }
+  #printique{
+    position: absolute; /* Position text on top of the image */
+    bottom: 210px; /* Adjust position from the bottom */
+    left: 13%;
+    font-size: 26px;
+    font-weight: light;
+
+  }
+  #printique p{
+    font-size: 16px;
+    position: absolute; /* Position text on top of the image */
+    top:39px;
+    font-weight: light;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+    
+  }

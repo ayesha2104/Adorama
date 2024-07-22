@@ -1,0 +1,29 @@
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif; 
+}
+b{
+    color: #fff0b2;
+    font-family: Arial, sans-serif; 
+    margin: 0px 0px 0px 5.2px;
+    font-weight: bolder;
+}
+.banner a{
+    margin-left: 10px;
+    font-size: clamp(10px,2vw,11px);
+    color: #7dc9ff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+
+
+}

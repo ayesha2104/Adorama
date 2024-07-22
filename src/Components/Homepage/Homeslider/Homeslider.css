@@ -1,0 +1,116 @@
+/* Homeslider.css */
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensure no overflow from images */
+    position: relative; /* Add position relative to the container */
+}
+
+.slick-list {
+    height: 100%; /* Ensure the slick list (container) is full height */
+}
+
+.slick-track {
+    height: 100%; /* Ensure the slick track (container) is full height */
+}
+
+.slick-slide {
+    height: 100%; /* Full viewport height */
+}
+
+.slick-slide div {
+    height: 100%; /* Ensure each slide div is full height */
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove box shadow */
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px; /* Position dots at the bottom */
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Ensure dots are above the images */
+    color: white; /* Set the color of the dots to white for visibility */
+}
+
+.slick-dots li {
+    margin: 0 5px;
+   
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: white; /* White dots for better visibility */
+    opacity: 0.5;
+
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 1;
+}
+
+.slick-prev, .slick-next {
+    font-size: 30px; /* Larger arrow size */
+    opacity: 0.55;
+}
+
+.slick-prev:hover{
+     color: #fff;
+    opacity: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px; /* Larger arrow size */
+    line-height: 1;
+    opacity: 0.75;
+    color: white; /* White arrows for better visibility */
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    opacity: 1;
+}
+
+.slick-prev {
+    left: 20px; /* Adjusted position */
+}
+
+.slick-next {
+    right: 20px; /* Adjusted position */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slick-prev, .slick-next {
+      font-size: 30px; /* Slightly smaller arrows */
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 30px; /* Slightly smaller arrows */
+    }
+}
+
+@media (max-width: 480px) {
+    .slick-prev, .slick-next {
+      font-size: 25px; /* Smaller arrows */
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 25px; /* Smaller arrows */
+    }
+}

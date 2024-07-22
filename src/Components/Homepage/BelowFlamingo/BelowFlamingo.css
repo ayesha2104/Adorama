@@ -1,0 +1,44 @@
+.belowFlamingo {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly around items */
+    align-items: center; /* Center items vertically if needed */
+    padding: 20px; /* Add some padding around the container */
+    gap: 20px;
+  }
+  
+  .belowFlamingo div {
+    flex: 1; /* Allow each child to grow and shrink equally */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+
+  }
+  
+  .belowFlamingo img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .image-text {
+    margin-top: 19px;
+    margin-bottom: 7px; /* Space between the image and the text */
+    font-weight: 540;
+    font-size: 25px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+  }
+  .para{
+    margin: 0px;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+  }
+  .asus{
+    position: relative;
+    bottom: 19px;
+  }
+  .asus .para{
+    position: relative;
+    top: 3px;
+  }
+  .eton .para{
+    line-height: 18px;
+  }
+  
