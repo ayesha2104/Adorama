@@ -1,5 +1,7 @@
 import React from "react";
 import "./NavLogo.css";
+import { Link } from 'react-router-dom';
+
 import {SearchIcon} from  "@chakra-ui/icons";
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { ChevronDownIcon } from "@chakra-ui/icons";
@@ -28,19 +30,21 @@ const NavLogo = () => {
         <SearchIcon style={{ fontSize: 14 }} className="flip-vertical"/>
         </button>
       </div>
+     <Link to="Adorama\src\Components\Login.jsx">
         <div className="SignIn">
-         <PersonOutlineOutlinedIcon sx={{ color: "white" }} style={{ fontSize: 38 }}/>
+          <PersonOutlineOutlinedIcon sx={{ color: "white" }} style={{ fontSize: 38 }}/>
          <div className="Account">
          <div className="signInText">Sign In</div>
          <div className="myAccountText">My Account <ChevronDownIcon/></div>
          </div>
+         
         </div>
+        </Link>        
         <div className="Cart">
           <ShoppingCartOutlined sx={{ color: "white" }} style={{ fontSize: 38 }}/>
-
+        </div>
         </div>
 
-      </div>
     </div>
   );
 };
