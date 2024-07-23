@@ -30,12 +30,14 @@ const NavLogo = () => {
          </div>
          
         </div>
-        </Link>        
+        </Link>      
+         <Link to="./cart">
         <div className="Cart">
           <ShoppingCartOutlined sx={{ color: "white" }} style={{ fontSize: 38 }}/>
         </div>
+        </Link>
         </div>
-
+        
     </div>
   );
 };
