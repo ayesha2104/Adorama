@@ -7,7 +7,7 @@
     height: calc(100vh - 40px); /* Full viewport height minus padding */
     padding: 20px; /* Add padding around the grid */
     box-sizing: border-box; /* Include padding in the element's total width and height */
-    margin-bottom: 40px; /* Remove any default margin */
+    margin-bottom: 300px; /* Remove any default margin */
   }
   
   .image-container {

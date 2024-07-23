@@ -10,7 +10,6 @@ import BelowFlamingo from './BelowFlamingo/BelowFlamingo';
 import BestSellers from './BestSellers/BestSellers';
 import Sponsered from './Sponsered/Sponsored';
 import BelowSponseredProducts from './BelowSponseredProducts/BelowSponseredProducts';
-import AboveNavbar from './AboveNavbar/AboveNavbar';
 
 
 
@@ -30,9 +29,6 @@ function HomePage() {
         <BestSellers/>
         <Sponsered/>
         <BelowSponseredProducts/>
-        <AboveNavbar/>
-        
-
       </div>
     </>
   );

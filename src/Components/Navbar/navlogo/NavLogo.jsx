@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavLogo.css";
 import { Link } from 'react-router-dom';
-
 import {SearchIcon} from  "@chakra-ui/icons";
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { ChevronDownIcon } from "@chakra-ui/icons";

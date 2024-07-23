@@ -1,8 +1,12 @@
 import React from 'react';
 import './Footer.css'; // Adjust the path as needed
+import AboveFooter from './AboveFooter/AboveFooter';
+
 
 const Footer = () => {
   return (
+    <>
+    <AboveFooter/>
     <div className="footer-main">
       <div id="footer-help" className="footer-links">
         <h3 className="footer-header">How Can We Help?</h3>
@@ -71,7 +75,9 @@ const Footer = () => {
       </div>
 
     </div>
+    </>
   );
+
 };
 
 export default Footer;

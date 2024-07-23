@@ -1,0 +1,77 @@
+.abovefooter{
+    height: 350px;
+    background-color: #f2f2f2;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.abovefooter img{
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 65px;
+    align-self: center;
+    
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+
+}
+#call{
+    position: relative;
+    right: 33px;
+    top: 7px;
+    color: #003875;
+}
+#chat{
+    color: #003875;
+    position: relative;
+    top: 5px;
+    right: 6px;
+}
+#service{
+    color: #003875;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+#location{
+    color: #003875;
+    position: relative;
+    top: 5px;   
+
+}
+.Call p{
+    position: relative;
+    right: 25px;
+}
+p{
+    font-size: 13px;
+    color: black;
+    margin-top: 13px;
+    
+}
+#img1{
+    position: relative;
+    left: 27px;
+}
+#img2{
+    position: relative;
+    left: 35px;
+
+}
+#img3{
+    position: relative;
+    left: 40px;
+}
+#img4{
+    position: relative;
+    left: 55px;
+}
+.abovefooter a{
+    color: rgba(18, 78, 119, 0.87);
+}

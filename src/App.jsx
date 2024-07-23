@@ -8,6 +8,7 @@ import SignUp from './Components/SignUp';
 import ForgotPassword from './Components/ForgotPassword';
 import Cart from './Components/Cart';
 
+
 function App() {
   const location = useLocation();
   const hideNavbarAndFooter = ['/login', '/signup', '/forgot-password'].includes(location.pathname);
