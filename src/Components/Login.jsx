@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
@@ -46,14 +47,14 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
               required />
           </div>
-          <div className="inputGroup">
+          <div className="inputGroup rememberMe">
             <label>
               <input  type="checkbox" /> <p>Remember Me</p>
             </label>
+            <Link to="/forgot-password" className="forgotPassword">Forgot Password?</Link>
           </div>
           <button type="submit" className="btnPrimary">SIGN IN</button>
           {error && <p className="error">{error}</p>}
-          <Link to="/forgot-password" className="forgotPassword">Forgot Password?</Link>
           <div className="divider">OR</div>
           <button type="button" className="btnSecondary">Sign in with Apple</button>
           <button type="button" className="btnSecondary">Sign in with Google</button>
