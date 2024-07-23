@@ -4,18 +4,25 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
 import './OurTopDeals.css';
+import camera from './camera.png'
+import flashpoint from './flashpoint.png'
+import drone from './drone.png'
+import instuments from './instuments.png'
+import lens from './lens.png'
+import manfrotto from './manfrotto.png'
+import pelican from './camera.png'
 
 // Sample product data (you can replace this with real data)
 const products = [
-  { id: 1,  image: 'https://via.placeholder.com/150' },
-  { id: 2,  image: 'https://via.placeholder.com/150' },
-  { id: 3,  image: 'https://via.placeholder.com/150' },
-  { id: 4,  image: 'https://via.placeholder.com/150' },
-  { id: 5,  image: 'https://via.placeholder.com/150' },
-  { id: 6,  image: 'https://via.placeholder.com/150' },
-  { id: 7,  image: 'https://via.placeholder.com/150' },
-  { id: 8,  image: 'https://via.placeholder.com/150' },
-  { id: 9,  image: 'https://via.placeholder.com/150' },
+  { id: 1,  image: camera },
+  { id: 2,  image: flashpoint },
+  { id: 3,  image:  drone},
+  { id: 4,  image:  instuments},
+  { id: 5,  image: lens },
+  { id: 6,  image:  manfrotto},
+  { id: 7,  image: pelican },
+  { id: 8,  image: lens },
+  { id: 9,  image:  flashpoint},
 ];
 
 const OurTopDeals = () => {

@@ -1,28 +1,41 @@
-.shopCat{
-    padding-top: 30px;
-    background-color: #f3f3f3;
-}
+/* ShopCat.css */
+
 .shopCat {
-    margin: 0 auto;
-  }
-  .shopCat .heading{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: start;
-    position: relative;
-    left: 37px;
-    bottom: 14px;
-    margin-left: 20px;
-    margin-top: 19px;
-  }
+  margin: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 20px;
   
-  .slide {
-    
-    padding:0px 60px;
-  }
-  
-  .slide img {
-    width: 114px;
-    height: 114px;
-    border-radius: 5px;
-  }
-  
+}
+
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+  color: black;
+}
+
+.slide {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}

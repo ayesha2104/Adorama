@@ -22,6 +22,9 @@ function Login() {
 
   return (
     <div className="loginContainer">
+      <div className="newCustomer">
+       <p>ADORAMA</p> 
+      </div>
       <div className="loginBox">
         <h2>Sign In</h2>
         <form onSubmit={handleSubmit}>
@@ -29,6 +32,7 @@ function Login() {
             <label>Your Email:</label>
             <input
               type="email"
+              placeholder='Email Adress'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required />
@@ -37,13 +41,14 @@ function Login() {
             <label>Password:</label>
             <input
               type="password"
+              placeholder='Password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required />
           </div>
           <div className="inputGroup">
             <label>
-              <input type="checkbox" /> Remember Me
+              <input  type="checkbox" /> <p>Remember Me</p>
             </label>
           </div>
           <button type="submit" className="btnPrimary">SIGN IN</button>
@@ -53,8 +58,9 @@ function Login() {
           <button type="button" className="btnSecondary">Sign in with Apple</button>
           <button type="button" className="btnSecondary">Sign in with Google</button>
         </form>
-        <p>New Customer? <Link to="/signup">Create an Account</Link></p>
+        <span>New Customer? <Link to="/signup"><br/>Create an Account</Link></span>
       </div>
+    
     </div>
   );
 }

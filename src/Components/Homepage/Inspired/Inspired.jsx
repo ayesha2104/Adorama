@@ -4,6 +4,22 @@ import './Inspired.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+// Import images
+import Image1 from "./image1.png";
+import Image2 from "./image2.png";
+import Image3 from "./image3.png";
+import Image4 from "./image4.png";
+import Image5 from "./image5.png";
+import Image6 from "./image6.png";
+import Image7 from "./image7.png";
+import Image8 from "./image8.png";
+import Image9 from "./image9.png";
+import Image10 from "./image10.png";
+import Image11 from "./image11.png";
+import Image12 from "./image12.png";
+
+// Import more images as needed
+
 const Inspired = () => {
   const settings = {
     dots: false,
@@ -38,16 +54,33 @@ const Inspired = () => {
     ],
   };
 
+  // Array of imported images
+  const images = [
+    Image1,
+    Image2,
+    Image3,
+    Image4,
+    Image5,
+    Image6,
+    Image7,
+    Image8,
+    Image9,
+    Image10,
+    Image11,
+    Image12,
+    // Add more images as needed
+  ];
+
   return (
     <div className='inspired'>
       <div className="heading">
         INSPIRED BY YOUR SHOPPING TRENDS
       </div>
       <Slider {...settings}>
-        {Array.from({ length: 14 }, (_, index) => (
+        {images.map((image, index) => (
           <div key={index} className="slide">
             <img
-              src={`data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDQ0NDQ0NDQ0NDQ0NDQ0PDQ8PDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMvNygtLisBCgoKDQ0NDg0NDisZFRkrLSs3KysrKysrLS0rLS0rKysrKystKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBAUH/8QAJhABAQEAAQIFBAMBAAAAAAAAAAERAhJRMUFhkfADEyFxgbHxYv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/YBUVBSAALICGNYAmGKAYYsi4DPSvQ0fPNFY6E6HQVHLpMdmekVzxMdOlMEYMbAY6as4tGAgXWbQa1NQBdTU00VTU0ENFnFqQE6RoBkCACrIBIoAgKKEiyKIEFFRQEAxcRUAUBBAvFnL+2tFGBus4iIi4ihidKgqdJ0xUEMioArPPnnrfKJeV8vfyOHD+b50GPtW/m+N9aPRgKwosEJFAAFgIsigAKKACAKKAAKCAzY0KM4Y1YiCYllbIoxeN7M3jf8AXVUHC8b2Zy9r7PSKPLb+/anV+/Z6k6Z2B5tvb3Onv+f6enonY+3BHCRqR2n052aknYVw6b2o9ADy4qoAKCGKAoCgAAAoAAAKgAKCoqAliiiKCAfPIX55KJ88VBABcBFABQAAB5wFQUBQAQUEUBVABABVABABQAAFRQAFDDFEEwUUAEBQAAAFQHnUFAAQUBQABQQAFFAQAVQAQAUAAAFAAAAABQAAFRQAAecBUFRRQABQQAFBQQAFBQQAFFAQAUAAAAAFAAABQAAAAecFUABABFAFD54KfPE+eKBqoKKqKgAKCggAKKAgAAAAoAAACoAoigCagOQxefozfqVR1Rx+5T7oO44T617b/FX73/N94DsRzn1p2vs192f7+AbGeuL1QFDYagLKgo0qSqgAKCggAAAAKAAJoKAAAAlq1ABFB4+VcryZ5c7bnH38o1w4Z63uqElvp6ebUnzxqgIuLi4CYooJG5UkBW4rCyg0qSxpA1ZUXAWVWVBoQBQAAUAE0C0gAoigJaWoCoWkAwUB8/hwyZGi8mPFUavKJ1GLgG0/K4ALLTFwUlalTFwRVSGg0RnqOoV0nJqVy6l1B1GJyWcgbVmcooKAAWpqAtpEVRRNTUGqmoAoAI1EUAAHz8XAVFxcAUxZAEXFwACqAzpgAKAAoKKALpoAu3uuggbV2goaoIAooCiAAooCAAqP/9k=`}
+              src={image}
               alt={`Slide ${index + 1}`}
             />
           </div>
