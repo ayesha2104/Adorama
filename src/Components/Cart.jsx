@@ -5,7 +5,7 @@ import './cart.css';
 
 const Cart = () => {
     const [cart, setCart] = useState([]);
-    const navigate = useNavigate(); // Initialize useNavigate hook
+    const navigate = useNavigate();
 
     useEffect(() => {
         const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -19,11 +19,11 @@ const Cart = () => {
     };
 
     const handleContinueShopping = () => {
-        navigate('/'); // Redirect to home page
+        navigate('/'); 
     };
 
     const handleSignIn = () => {
-        navigate('/login'); // Redirect to login page
+        navigate('/login'); 
     };
 
     return (
