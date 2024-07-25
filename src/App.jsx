@@ -7,11 +7,11 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import ForgotPassword from './Components/ForgotPassword';
 import Cart from './Components/Cart';
-
+import SingleProduct from './Components/SingleProduct';
 
 function App() {
   const location = useLocation();
-  const hideNavbarAndFooter = ['/login', '/signup', '/forgot-password'].includes(location.pathname);
+  const hideNavbarAndFooter = ['/login', '/signup', '/forgot-password','/SingleProduct'].includes(location.pathname);
 
   return (
     <div className="App">
@@ -23,6 +23,9 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
        <Route path="/cart" element={<Cart />} />
+       <Route path="/singleproduct" element={<SingleProduct />} />
+
+       
       </Routes>
       {!hideNavbarAndFooter && <Footer />}
     </div>
@@ -30,3 +33,5 @@ function App() {
 }
 
 export default App;
+
+

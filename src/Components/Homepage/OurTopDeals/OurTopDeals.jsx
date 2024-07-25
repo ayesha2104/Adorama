@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
@@ -38,11 +39,11 @@ const OurTopDeals = () => {
 
   return (
     <div className='ourTop'>
-      <div className='heading'>
+     <div className='heading'>
         <EmojiEventsOutlinedIcon style={{ fontSize: 54, color: "#408ac8" }} />
         Our Top Deals
       </div>
-      <div className='slider-container'>
+     <Link to="/SingleProduct"> <div className='slider-container'>
         <Slider {...settings}>
           {products.map(product => (
             <div key={product.id} className='product-card'>
@@ -53,7 +54,7 @@ const OurTopDeals = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div></Link>
     </div>
   );
 }
