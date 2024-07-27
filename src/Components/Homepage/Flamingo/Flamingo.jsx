@@ -1,5 +1,6 @@
 import React from 'react'
 import flamingo from './flamingo.jpg'
+import { Link } from 'react-router-dom'
 
 const Flamingo = () => {
   return (

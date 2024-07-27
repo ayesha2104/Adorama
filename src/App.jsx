@@ -11,7 +11,7 @@ import SingleProduct from './Components/SingleProduct';
 
 function App() {
   const location = useLocation();
-  const hideNavbarAndFooter = ['/login', '/signup', '/forgot-password','/SingleProduct'].includes(location.pathname);
+  const hideNavbarAndFooter = ['/login', '/signup', '/forgot-password','/SingleProduct','/cart'].includes(location.pathname);
 
   return (
     <div className="App">
@@ -24,6 +24,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
        <Route path="/cart" element={<Cart />} />
        <Route path="/singleproduct" element={<SingleProduct />} />
+
 
        
       </Routes>
