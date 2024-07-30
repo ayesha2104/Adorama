@@ -39,14 +39,14 @@ const SingleProduct = () => {
         <Box boxSize='sm'>
           <Image
             style={{ height: '300px', marginTop: '20px' }}
-            src={product.image || 'https://via.placeholder.com/300'}
+            src={product.image || 'https://www.adorama.com/images/product/ISOA7M3K.JPG'}
             alt={product.name || 'Adorama\src\Components\Homepage\OurTopDeals\camera.png'}
           />
         </Box>
         <div>
           <div style={{ width: '800px', marginTop: '10px' }}>
             <div style={{ fontSize: '30px', textAlign: 'left' }}>
-              {product.name || 'Nikon Z8 Mirrorless Camera with NIKKOR Z 24-120mm f/4 S Lens'}
+              {product.name || 'Sony Alpha a7 III 24MP UHD 4K Mirrorless Camera with FE 28-70mm Lens'}
               <br />
               <div style={{ textAlign: 'left', fontSize: '12px', marginTop: '10px' }}>
                 {product.description || 'High-performance Z8 Mirrorless Digital Camera with 45.7MP full-frame sensor for stunning stills,NIKKOR Z 24-120mm f/4 S Lens with versatile zoom range and exquisite image quality,Advanced video capabilities with internal 8K/60p and 4K/120p recording,Agile, modular, and lightweight design for comfortable handling and smooth movement,Enhanced file formats including 12-bit N-RAW and ProRes RAW HQ for optimal editing flexibility'}
