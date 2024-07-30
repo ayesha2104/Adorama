@@ -15,7 +15,7 @@ function Login() {
     const user = JSON.parse(localStorage.getItem(email));
     if (user && user.password === password) {
       localStorage.setItem('loggedInUser', email);
-      navigate('/dashboard'); 
+      navigate('/'); 
     } else {
       setError('Invalid email or password');
     }
